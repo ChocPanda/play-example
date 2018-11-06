@@ -6,11 +6,6 @@ including:
 * [Play Action refiners](https://www.playframework.com/documentation/2.6.x/ScalaActionsComposition)
 * [Circe Body Parsers for Play](https://github.com/jilen/play-circe)
 
-Requests are authenticated using a pseudo OAuth pattern whereby the token
-is passed as a header "bearer" normally this token would be validated against
-some authentication service but that seemed out of scope to implement here so I have simply
-used the token as the users userId.
-
 All endpoints validate the userId's and itemId's ensuring they're of correct
 length and only contain valid alphanumeric characters 
 

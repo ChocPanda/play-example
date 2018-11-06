@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# ~~~~
+# In any normal API I would retrieve the user Id securely, e.g. from an OAuth token
+# or at-least in an encrypted header however for speed I have just put the user Id in the url
+# ~~~~
+
+GET       /example              io.panda.example.controllers.ExampleController.getExample
+PATCH     /example              io.panda.example.controllers.ExampleController.addItem
+DELETE    /example              io.panda.example.controllers.ExampleController.deleteFromExample
